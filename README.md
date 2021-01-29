@@ -1,7 +1,7 @@
 # new-prj
 
 > A Vue.js project
-
+>vue2模版的数据大屏demo
 ## Build Setup
 
 ``` bash

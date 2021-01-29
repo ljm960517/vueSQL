@@ -16,22 +16,26 @@ export default new Router({
     {
       path: '/container',
       name: 'container',
-      component:()=>import('../view/container.vue')
+      component:()=>import('../view/container.vue'),
+      meta: {
+        keepAlive: true  // 需要缓存
+        }
     },
     {
-      path: '/test1',
-      name: 'test1',
-      component:()=>import('../view/test1.vue')
+      path: '/salesSql',
+      name: 'salesSql',
+      component:()=>import('../view/salesSql.vue'),
+      meta: {
+        keepAlive: true  // 需要缓存
+        }
     },
     {
-      path: '/test2',
-      name: 'test2',
-      component:()=>import('../view/test2.vue')
-    },
-    {
-      path: '/test3',
-      name: 'test3',
-      component:()=>import('../view/test3.vue')
+      path: '/public',
+      name: 'public',
+      component:()=>import('../view/public.vue'),
+      meta: {
+        keepAlive: true  // 需要缓存
+        }
     }
   ]
 })
